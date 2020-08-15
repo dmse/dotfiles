@@ -1,0 +1,4 @@
+# so delete key works in st
+set enable-keypad on
+# no more bells
+set bell-style none
