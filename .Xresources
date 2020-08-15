@@ -1,0 +1,6 @@
+#include ".xres/nord"
+#include ".xres/xft"
+#include ".xres/rofi"
+#include ".xres/polybar"
+
+Xcursor.theme: capitaine-cursors-light

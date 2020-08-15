@@ -1,0 +1,17 @@
+rofi.modi: combi,drun,run,ssh
+rofi.lines: 15
+rofi.font: JetBrains Mono 10
+rofi.show-icons: true
+rofi.drun-display-format: {icon} {name}
+rofi.combi-modi: drun,run,ssh
+rofi.matching: fuzzy
+rofi.display-window:  
+rofi.display-run:  
+rofi.display-drun:  
+
+rofi.columns: 2
+rofi.eh: 1
+rofi.hide-scrollbar: true
+
+rofi.theme: ~/.config/rofi/full.rasi
+rofi.drun-icon-theme: Paper

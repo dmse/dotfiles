@@ -1,0 +1,8 @@
+! Polybar resources
+*pb-lightbg: nord1
+*pb-lightfg: nord5
+*pb-separator: nord1
+*pb-selection: nord11
+*pb-background: nord0
+*pb-foreground: #839496
+*pb-shade: #434c5e
