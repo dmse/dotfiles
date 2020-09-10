@@ -1,8 +1,8 @@
 conky.config = {
+  update_interval = 1,
   out_to_console = true,
   out_to_x = false,
   background = false,
-  update_interval = 1,
   total_run_times = 0,
   use_spacer = 'none',
   format_human_readable = true,
