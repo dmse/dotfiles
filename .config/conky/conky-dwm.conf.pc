@@ -1,0 +1,16 @@
+conky.config = {
+  out_to_console = true,
+  out_to_x = false,
+  background = false,
+  update_interval = 1,
+  total_run_times = 0,
+  use_spacer = 'none',
+  format_human_readable = true,
+};
+conky.text = [[
+${time %H:%M, %a %d %b %Z}; ${tztime Europe/London %H:%M %Z}; ${tztime Australia/Brisbane %H:%M %Z} | CPU ${cpu cpu0}% > ${top name 1} | RAM $memperc% > ${top_mem name 1} | D:${downspeedf eth0}; U:${upspeedf eth0}
+]];
+
+--CPU ${cpubar 10,10}
+--RAM ${membar 10,10} $memperc% ${mem}/${memmax}
+--UP ${uptime}
