@@ -22,6 +22,7 @@ c.url.searchengines = {
         'tb': 'https://s.taobao.com/search?q={}',
         'so': 'https://stackoverflow.com/search?q={}',
         'wa': 'https://wiki.archlinux.org/?search={}',
+        'ap': 'https://archlinux.org/packages/?sort=&maintainer=&flagged=&q={}',
         'aur': 'https://aur.archlinux.org/packages/?O=0&SeB=nd&K={}&outdated=&SB=p&SO=d&PP=50&do_Search=Go'
         }
 
@@ -29,9 +30,13 @@ c.url.searchengines = {
 c.aliases = {'ffo': 'spawn firefox -url {url}'}
 config.bind(',ffo', 'spawn firefox -url {url}', mode='normal')
 
-# open url in mpv for video playing
-c.aliases = {'mpv': 'spawn mpv {url}'}
-config.bind(',mpv', 'spawn mpv {url}', mode='normal')
+# open url in mpv
+c.aliases = {'m': 'spawn mpv {url}'}
+config.bind(',m', 'spawn mpv {url}', mode='normal')
+
+# open hint-url in mpv
+c.aliases = {'M': 'hint links spawn mpv {hint-url}'}
+config.bind(',M', 'hint links spawn mpv {hint-url}', mode='normal')
 
 # Minimise fingerprint
 c.content.headers.user_agent = 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko) {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}'
